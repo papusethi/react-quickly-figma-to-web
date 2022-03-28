@@ -1,0 +1,141 @@
+.app__header {
+  background: var(--color-pale-grey);
+}
+
+.app__header-microtitle {
+  width: 100%;
+  color: var(--color-primary-dark);
+}
+
+.app__header-headline {
+  width: 100%;
+
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-darkest-primary);
+}
+
+.headtext__display {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+}
+
+.app__header-sub {
+  width: 100%;
+}
+
+.app__header-sign {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.app__header-sign button:nth-child(2) {
+  margin-left: 1.5rem;
+}
+
+.app__header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__mainImage {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__mainImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.app__projectUpdated {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  position: absolute;
+  left: -10%;
+  bottom: -20%;
+}
+
+.app__newTask {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  position: absolute;
+  top: 0;
+  right: -20%;
+}
+
+@media screen and (max-width: 1280px) {
+  .headtext__display {
+    font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__header-microtitle,
+  .app__header-headline,
+  .app__header-sub {
+    text-align: center;
+  }
+
+  .headtext__display {
+    font-size: 48px;
+  }
+
+  .app__header-sign {
+    justify-content: center;
+  }
+
+  .app__header-img,
+  .app__projectUpdated,
+  .app__newTask {
+    width: 84%;
+  }
+
+  .app__projectUpdated {
+    bottom: -10%;
+    left: -16%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .headtext__display {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .headtext__display {
+    font-size: 36px;
+  }
+
+  .app__projectUpdated {
+    bottom: -16%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .headtext__display {
+    font-size: 28px;
+  }
+
+  .app__header-sign button:nth-child(2) {
+    margin-left: 1rem;
+  }
+}

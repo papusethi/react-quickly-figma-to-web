@@ -1,38 +1,296 @@
-.App {
-  text-align: center;
+.section__padding {
+  padding: 4rem 6rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+
+  min-height: 100vh;
+}
+
+.app__wrapper_info {
+  flex: 1;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.app__wrapper_img {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__wrapper_img-reverse {
+  justify-content: flex-start;
+  margin-right: 2rem;
+}
+
+.app__wrapper_img img {
+  width: 80%;
+}
+
+.headtext__h1,
+.headtext__h2,
+.headtext__h3,
+.headtext__h4,
+.headtext__h5,
+.headtext__h6 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.headtext__h1 {
+  font-size: 50px;
+  line-height: 120%;
+}
+
+.headtext__h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.headtext__h3 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.headtext__h4 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.headtext__h5 {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.headtext__h6 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.p__xl,
+.p__large,
+.p__medium,
+.p__small {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.p__xl {
+  font-size: 24px;
+}
+
+.p__large {
+  font-size: 18px;
+}
+
+.p__medium {
+  font-size: 16px;
+}
+
+.p__small {
+  font-size: 14px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.button__primary-light {
+  padding: 10px 16px;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.button__primary-dark {
+  padding: 16px 36px;
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.button__white {
+  padding: 16px 36px;
+  background: var(--color-white);
+  color: var(--color-darkest-primary);
+  border: 1px solid var(--color-border);
+
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__wrapper {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .app__wrapper_img {
+    margin: 5rem 0 0 0;
+  }
+
+  .app__wrapper_img-reverse {
+    margin: 0 0 5rem 0;
+  }
+
+  .app__wrapper_img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .headtext__h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .headtext__h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .headtext__h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .headtext__h4 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .headtext__h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .headtext__h6 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .p__xl {
+    font-size: 18px;
+  }
+
+  .p__large {
+    font-size: 16px;
+  }
+
+  .p__medium {
+    font-size: 14px;
+  }
+
+  .p__small {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .headtext__h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .headtext__h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .headtext__h3 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .headtext__h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .headtext__h5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .headtext__h6 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .p__xl {
+    font-size: 18px;
+  }
+
+  .p__large {
+    font-size: 16px;
+  }
+
+  .p__medium {
+    font-size: 14px;
+  }
+
+  .p__small {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .headtext__h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .headtext__h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .headtext__h4 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .p__xl {
+    font-size: 16px;
+  }
+
+  .p__large {
+    font-size: 14px;
+  }
+
+  .p__medium {
+    font-size: 13px;
   }
 }

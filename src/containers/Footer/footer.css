@@ -1,0 +1,130 @@
+.app__footer {
+  background: var(--color-primary-dark);
+  padding: 4rem 6rem 1rem 6rem;
+  color: var(--color-white);
+}
+
+.app__footer p,
+.app__footer a {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-primary-lighter);
+  display: block;
+}
+
+.app__footer-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.app__footer-about {
+  flex: 1.5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.app__footer-about p {
+  margin-top: 1rem;
+}
+
+.app__footer-links {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.app__footer-content h5 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.app__footer-links a {
+  margin-top: 0.6rem;
+}
+
+.app__footer hr {
+  background: var(--color-primary-light);
+  margin: 2rem 0 1rem 0;
+}
+
+.app__footer-copyright p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1250px) {
+  .app__footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .app__footer-about {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app__footer {
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .app__footer-about {
+    flex: none;
+  }
+
+  .app__footer-links {
+    flex: 0.9;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__footer {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .app__footer p,
+  .app__footer a {
+    font-size: 14px;
+  }
+
+  .app__footer-content h5 {
+    font-size: 16px;
+  }
+
+  .app__footer-copyright p {
+    font-size: 12px;
+  }
+
+  .app__footer-links {
+    flex: 0.9;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .app__footer-content {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .app__footer-links {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .app__footer-links > div {
+    margin-top: 2rem;
+  }
+}

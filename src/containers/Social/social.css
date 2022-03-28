@@ -1,0 +1,45 @@
+.app__social {
+  background: var(--color-pale-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app__social-header {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.app__social-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.app__social-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem 0rem 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .app__social-header {
+    font-size: 18px;
+  }
+  
+.app__social-img {
+
+  margin: 2rem 2rem 0rem 2rem;
+}
+
+}

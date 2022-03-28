@@ -1,0 +1,41 @@
+.app__fcd {
+  background: linear-gradient(to top, #fafafa 60%, #ffffff);
+}
+.app__fcd-content {
+  background: var(--color-white);
+}
+
+.app__fcd-headline {
+  color: var(--color-darkest-primary);
+}
+
+.app__fcd-subheading {
+  color: var(--color-primary-dark);
+  margin-top: 12px;
+}
+
+.app__fcd-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.app__fcd-block {
+  width: 266px;
+  margin: 2rem 0;
+}
+
+.app__fcd-block img {
+  width: 56px;
+  height: 56px;
+}
+
+.app__fcd-block h5 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.app__fcd-divider img {
+  width: 100%;
+}
